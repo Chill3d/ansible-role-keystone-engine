@@ -33,4 +33,10 @@
       command: ldconfig
       args:
         chdir: "{{ keystone_local_src_dir }}/build"
+
+    - name: Install Python 3 bindings
+      command: make install3
+      args:
+        chdir: "{{ keystone_local_src_dir }}/bindings/python"
+
   when: "clone_keystone is changed"
