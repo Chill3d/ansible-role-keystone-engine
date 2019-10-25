@@ -1,0 +1,7 @@
+---
+# vars file for ansible-role-keystone-engine
+
+keystone_dep_packages:
+  - build-essential
+  - cmake
+  - git
